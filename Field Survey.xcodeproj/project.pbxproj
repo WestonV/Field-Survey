@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		EB7C8EF6219C8BC600DADCD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C8EF5219C8BC600DADCD9 /* AppDelegate.swift */; };
-		EB7C8EF8219C8BC600DADCD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C8EF7219C8BC600DADCD9 /* ViewController.swift */; };
 		EB7C8EFB219C8BC600DADCD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C8EF9219C8BC600DADCD9 /* Main.storyboard */; };
 		EB7C8EFD219C8BC700DADCD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C8EFC219C8BC700DADCD9 /* Assets.xcassets */; };
 		EB7C8F00219C8BC700DADCD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C8EFE219C8BC700DADCD9 /* LaunchScreen.storyboard */; };
+		EB91AE5721AC6DBE0027D0CC /* ObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91AE5621AC6DBE0027D0CC /* ObservationDetailViewController.swift */; };
+		EB91AE5A21AC6FF80027D0CC /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = EB91AE5921AC6FF80027D0CC /* field_observations.json */; };
+		EB91AE5C21AC70A40027D0CC /* ObservationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91AE5B21AC70A40027D0CC /* ObservationStruct.swift */; };
+		EB91AE5E21AC7AEC0027D0CC /* ObservationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91AE5D21AC7AEC0027D0CC /* ObservationLoader.swift */; };
+		EB91AE6021AC7F3B0027D0CC /* ObservationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91AE5F21AC7F3B0027D0CC /* ObservationTableViewController.swift */; };
+		EB91AE6221AC83710027D0CC /* ObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91AE6121AC83710027D0CC /* ObservationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB7C8EF2219C8BC600DADCD9 /* Field Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Field Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7C8EF5219C8BC600DADCD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB7C8EF7219C8BC600DADCD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB7C8EFA219C8BC600DADCD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB7C8EFC219C8BC700DADCD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7C8EFF219C8BC700DADCD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB7C8F01219C8BC700DADCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB91AE5621AC6DBE0027D0CC /* ObservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationDetailViewController.swift; sourceTree = "<group>"; };
+		EB91AE5921AC6FF80027D0CC /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = field_observations.json; path = "Field Survey/field_observations.json"; sourceTree = SOURCE_ROOT; };
+		EB91AE5B21AC70A40027D0CC /* ObservationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationStruct.swift; sourceTree = "<group>"; };
+		EB91AE5D21AC7AEC0027D0CC /* ObservationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationLoader.swift; sourceTree = "<group>"; };
+		EB91AE5F21AC7F3B0027D0CC /* ObservationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTableViewController.swift; sourceTree = "<group>"; };
+		EB91AE6121AC83710027D0CC /* ObservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,26 @@
 			isa = PBXGroup;
 			children = (
 				EB7C8EF5219C8BC600DADCD9 /* AppDelegate.swift */,
-				EB7C8EF7219C8BC600DADCD9 /* ViewController.swift */,
 				EB7C8EF9219C8BC600DADCD9 /* Main.storyboard */,
 				EB7C8EFC219C8BC700DADCD9 /* Assets.xcassets */,
 				EB7C8EFE219C8BC700DADCD9 /* LaunchScreen.storyboard */,
 				EB7C8F01219C8BC700DADCD9 /* Info.plist */,
+				EB91AE5F21AC7F3B0027D0CC /* ObservationTableViewController.swift */,
+				EB91AE6121AC83710027D0CC /* ObservationTableViewCell.swift */,
+				EB91AE5621AC6DBE0027D0CC /* ObservationDetailViewController.swift */,
+				EB91AE5821AC6F7D0027D0CC /* Model */,
 			);
 			path = "Field Survey";
+			sourceTree = "<group>";
+		};
+		EB91AE5821AC6F7D0027D0CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB91AE5921AC6FF80027D0CC /* field_observations.json */,
+				EB91AE5B21AC70A40027D0CC /* ObservationStruct.swift */,
+				EB91AE5D21AC7AEC0027D0CC /* ObservationLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7C8F00219C8BC700DADCD9 /* LaunchScreen.storyboard in Resources */,
+				EB91AE5A21AC6FF80027D0CC /* field_observations.json in Resources */,
 				EB7C8EFD219C8BC700DADCD9 /* Assets.xcassets in Resources */,
 				EB7C8EFB219C8BC600DADCD9 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB7C8EF8219C8BC600DADCD9 /* ViewController.swift in Sources */,
+				EB91AE5721AC6DBE0027D0CC /* ObservationDetailViewController.swift in Sources */,
+				EB91AE5E21AC7AEC0027D0CC /* ObservationLoader.swift in Sources */,
+				EB91AE6021AC7F3B0027D0CC /* ObservationTableViewController.swift in Sources */,
 				EB7C8EF6219C8BC600DADCD9 /* AppDelegate.swift in Sources */,
+				EB91AE6221AC83710027D0CC /* ObservationTableViewCell.swift in Sources */,
+				EB91AE5C21AC70A40027D0CC /* ObservationStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
